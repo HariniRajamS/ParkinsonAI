@@ -14,6 +14,9 @@ import {
 import { Link as RouterLink, type LinkProps } from "react-router-dom";
 import { Button, type ButtonProps } from "@chakra-ui/react";
 
+import logo from "./assets/logo.png";
+import architectureDiagram from "./assets/architecture_diagram.png";
+
 type RouterButtonProps = ButtonProps & LinkProps;
 
 const RouterButton: React.FC<RouterButtonProps> = (props) => {
@@ -34,7 +37,7 @@ export default function HomePage() {
         <Flex align="center" justify="center" gap={4}>
           {/* Logo */}
           <Image
-            src="/src/assets/logo.png" // replace with your logo path
+            src={logo}
             alt="Logo"
             boxSize="80px" // adjust size
           />
@@ -174,7 +177,7 @@ export default function HomePage() {
           </Heading>
 
           <Image
-            src="/src/assets/architecture_diagram.png"
+            src={architectureDiagram}
             alt="Pipeline Overview Diagram"
             mx="auto"
             my={4}
