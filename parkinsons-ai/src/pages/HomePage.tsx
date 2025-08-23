@@ -14,8 +14,8 @@ import {
 import { Link as RouterLink, type LinkProps } from "react-router-dom";
 import { Button, type ButtonProps } from "@chakra-ui/react";
 
-import logo from "./assets/logo.png";
-import architectureDiagram from "./assets/architecture_diagram.png";
+import logo from "/src/assets/logo.png";
+import architectureDiagram from "/src/assets/architecture_diagram.png";
 
 type RouterButtonProps = ButtonProps & LinkProps;
 
