@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parkinson's Spiral Detection</title>
+</head>
+<body style="text-align:center; font-family:Arial; margin-top:50px;">
+    <h1>Parkinson's Spiral Test</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <br><br>
+        <input type="submit" value="Upload and Predict">
+    </form>
+
+    {% if prediction %}
+        <h2>{{ prediction }}</h2>
+    {% endif %}
+
+    {% if plot_img %}
+        <h3>Visual Representation</h3>
+        <img src="data:image/png;base64,{{ plot_img }}" width="300">
+    {% endif %}
+</body>
+</html>
